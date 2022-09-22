@@ -1,18 +1,13 @@
 package it.euris.ires.teams;
 
-import it.euris.ires.teams.data.Person;
-import it.euris.ires.teams.data.Team;
+import it.euris.ires.teams.data.model.Person;
+import it.euris.ires.teams.data.model.Team;
 import it.euris.ires.teams.data.display.DisplayFull;
-import it.euris.ires.teams.data.display.DisplayPerson;
-import it.euris.ires.teams.data.display.DisplayTeam;
 import it.euris.ires.teams.data.enums.Command;
 import it.euris.ires.teams.data.repository.PersonRepository;
 import it.euris.ires.teams.data.repository.TeamRepository;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
-import javax.swing.text.html.Option;
 import lombok.Data;
 
 @Data

@@ -1,6 +1,6 @@
 package it.euris.ires.teams.data.display;
 
-import it.euris.ires.teams.data.Person;
+import it.euris.ires.teams.data.model.Person;
 import java.util.List;
 import lombok.Data;
 

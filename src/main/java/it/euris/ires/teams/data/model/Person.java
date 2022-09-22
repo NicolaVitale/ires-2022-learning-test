@@ -1,4 +1,4 @@
-package it.euris.ires.teams.data;
+package it.euris.ires.teams.data.model;
 
 import lombok.Data;
 
