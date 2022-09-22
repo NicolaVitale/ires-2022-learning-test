@@ -74,9 +74,11 @@ public class TeamManagementImpl implements TeamManagement {
   private void createPerson(Person person) {
     Optional<Person> personOptional = personRepository.findById(person.getName());
     if (personOptional.isPresent()) {
-
-    } else {
-      Person newPerson = new Person(person.getName(), person.getTeam());
+      if (personOptional.get().getTeam() == person.getTeam()) {
+        System.out.println("Giocatore già presente in questa squadra");
+      }else {
+        Person newPerson = new Person(person.getName(), person.getTeam());
+      }
     }
   }
 }
