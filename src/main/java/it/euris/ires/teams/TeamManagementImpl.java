@@ -22,8 +22,7 @@ public class TeamManagementImpl implements TeamManagement {
 
   @Override
   public void sendCommand(String command) {
-    Command command1 = Command.valueOf(command);
-    switch (command1) {
+    switch (Command.valueOf(command)) {
       case CREATE_PERSON:
         createPerson(person);
         break;
